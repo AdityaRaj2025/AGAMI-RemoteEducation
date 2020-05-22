@@ -1,0 +1,200 @@
+*
+{
+    margin:0;
+    padding:0;  
+}
+/*---------Its all body "fonts"--------------------*/
+body
+{
+    font-family: sans-serif;
+	
+}
+
+
+/* its for navation bar for position-----------------*/
+#nav-bar
+{
+     position: sticky;
+     top: 0%;
+     z-index: 10;
+     
+}
+
+/*--its for navegation menu bar-------*/
+.navbar
+{
+    background-color: #c0aee0;
+    padding: 0 !important;
+}
+
+#navBar
+{
+    color: blue;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-:10px;
+  
+}
+
+.navbar-brand img
+{
+    height: 70px;
+    padding-left: 20px;
+}
+.navbar-nav li
+{
+    padding: 0 10px;
+}
+.navbar-nav li a
+{
+    color: #fff !important;
+    font-weight: 600;
+}
+.fa-bars
+{
+    color: #fff;
+    font-size: 30px !important;
+}
+.navbar-toggler
+{
+    outline: none !important;
+}
+
+/*--------------BANNER SECTION---------------------*/
+
+#banner
+{
+    background-image: linear-gradient(to right,#a517ba,#5f1782);
+    
+    color: #fff;
+    padding-top: -1%;
+}
+
+.promo-title
+{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 100px;
+	margin-left: 140px;
+}
+
+#banner a
+{
+    color: #fff;
+    text-decoration: none;
+}
+.bottom-img
+{
+    width: 100%;
+}
+
+.text h1{
+    color: brown;
+	font-size:65px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700px;
+	margin:14px 0px;
+}
+/*-Its for button design-----*/
+a.button7{
+	display:inline-block;
+	padding:0.7em 1.7em;
+	margin:0 0.3em 0.3em 0;
+	border-radius:0.2em;
+	box-sizing: border-box;
+	text-decoration:none;
+	font-family:'Roboto',sans-serif;
+	font-weight:400;
+	color:#FFFFFF;
+	background-color:#3369ff;
+	box-shadow:inset 0 -0.6em 1em -0.35em rgba(0,0,0,0.17),inset 0 0.6em 2em -0.3em rgba(255,255,255,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
+	text-align:center;
+	position:relative;
+}
+a.button7:active{
+	box-shadow:inset 0 0.6em 2em -0.3em rgba(0,0,0,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
+}
+@media all and (max-width:25em){
+	a.button7{
+	display:block;
+	margin:0.4em auto;
+	}
+}
+
+/*------------Service Section-------------------------------------*/
+
+#services
+{
+	background-image: linear-gradient(to right,#a517ba,#5f1782);
+    padding: 80px 0;
+	color: #fff;
+}
+
+
+/*----------------About Us Section----------------------*/
+#about-us
+{
+    background: #f8f9fa;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+/*---------Footer Section---------------------------------*/
+#footer
+{
+    background-image: linear-gradient(to right,#a517ba,#5f1782);
+    color: #fff;
+}
+.footer-img
+{
+    width: 100%;
+}
+.footer-box
+{
+    padding: 20px;
+}
+.footer-box img
+{
+    width: 120px;
+    margin-bottom: 20px;
+}
+.footer-box .fa
+{
+    margin-right: 8px;
+    font-size: 25px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding-top: 7px;
+    border-radius: 2px;
+    background-image: linear-gradient(to right,#a517ba,#5f1782);
+}
+.footer-box .form-control
+{
+    box-shadow: none !important;
+    border: none;
+    border-radius: 0;
+    margin-top: 25px;
+    max-width: 250px;
+}
+.footer-box .btn-primary
+{
+    box-shadow: none;
+    border-radius: 0;
+    margin-top: 30px;
+    background-image: linear-gradient(to right,#a517ba,#5f1782);
+}
+hr
+{
+    background-color: #fff;
+}
+.copyright
+{
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    text-align: center;
+}

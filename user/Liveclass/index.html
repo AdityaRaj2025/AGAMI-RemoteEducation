@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="WebRTC code samples">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1">
+    <meta itemprop="description" content="Client-side WebRTC code samples">
+    <meta itemprop="image" content="../../../images/webrtc-icon-192x192.png">
+    <meta itemprop="name" content="WebRTC code samples">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta id="theme-color" name="theme-color" content="#ffffff">
+
+    <base target="_blank">
+
+    <title>Select audio and video sources</title>
+
+   
+    <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../../../css/main.css">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+
+    <style>
+        div.select {
+            display: inline-block;
+            margin: 0 0 1em 0;
+        }
+
+        p.small {
+            font-size: 0.7em;
+        }
+
+        label {
+            width: 12em;
+            display: inline-block;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity-crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family-Candal|Lora">
+
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="../../css/admin.css">
+    <link rel="stylesheet" type="text/css" href="profile.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            
+            <img src="../../image/logo.png" height="60">
+        </div>
+        <i class="fa fa-bars menu-toggle"></i>
+        <ul class="nav">
+            <li>
+                <a href="#">
+                    <i class="fa fa-user"></i>
+                    User
+                    <i class="fa fa-chevron-down" style="font-size: .8em;"></i>
+                </a>
+                <ul>
+                    <li><a href="index.html">Profile</a></li>
+                    <li><a href="../../agami2/index.php" class="logout">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+
+
+    <!------Admin page wrapper----------->
+
+    <div class="admin-wrapper">
+
+        <!------Left sidebar------------->
+        <div class="left-sidebar">
+             <ul>
+                <li><a href="../attendenc2.php">Attendance</a></li>
+                 <li><a href="../../admin/quiz/index.php">Online Exam</a></li>
+                 <li><a href="../Liveclass/button.php">Live Class</a></li>
+                 <li><a href="../RecordVideo/record.php">Recording</a></li>   
+            </ul>
+
+
+        </div>
+        <!-----Admin content---------->
+        <div class="admin-content">
+            <div style="text-align: left">
+                <label for="videoSource">Video Source</label><select id="videoSource"></select>
+            </div>
+                <div style="text-align: left">
+                    <label for="audioSource">Audio Input</label><select id="audioSource"></select>
+                    
+                </div>
+                <div style="text-align: left">
+                    <label for="audioOutput">Audio Output</label><select id="audioOutput"></select>
+                </div>
+                
+               <center>
+                <div>
+                    <button id="record" class="button" style="background-color:#2979FF">Start Recording</button>
+                    <button id="play" class="button" style="background-color:#2979FF">Join Live</button>
+                    <button id="download" class="button" style="background-color:#2979FF">Download</button>
+                </div>
+            </center> 
+                <center>
+                    <video id="video" playsinline autoplay></video>
+                    <video id="recorded" playsinline muted></video>
+                   
+                    
+                </center>
+                
+                    
+                <div>
+                    <span id="errorMsg"></span>
+                </div>
+                <screen-sharing></screen-sharing>
+
+                
+
+        </div>
+    </div>
+
+<script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+<script src="main.js" async></script>
+<script src="rec.js" async></script>
+<script src="screen.js" async></script>
+
+<script src="../../../js/lib/ga.js"></script>
+
+<!-----JQuery---------->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.ckeditor.com/ckeditor5/19.0.0/classic/ckeditor.js"></script>
+
+    <script src="../../js/scripts.js"></script>
+</body>
+</html>

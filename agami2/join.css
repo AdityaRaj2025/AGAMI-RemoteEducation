@@ -1,0 +1,94 @@
+      * {
+      box-sizing: border-box;
+      }
+      /* Fix the button on the left side of the page */
+      .open-btn {
+      display: flex;
+      justify-content: left;
+      }
+      /* Style and fix the button on the page */
+      .open-button {
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      opacity: 0.8;
+      position: fixed;
+      }
+      /* Position the Popup form */
+      .login-popup {
+      font-family: serif;
+      font-size: 18px;
+      position: relative;
+      text-align: center;
+      width: 100%;
+      }
+      /* Hide the Popup form */
+      .form-popup {
+      display: none;
+      position: fixed;
+      left: 45%;
+      top:5%;
+      transform: translate(-45%,5%);
+      border: 1px solid #C0C0C0;
+      border-radius: 10px;
+      z-index: 9;
+      }
+      /* Styles for the form container */
+      .form-container {
+      max-width: 400px;
+      padding: 30px;
+      background-color: #FFFFFF;
+      }
+      /* Full-width for input fields */
+      .form-container input[type=text], .form-container input[type=password] {
+      width: 100%;
+      border-radius: 10px;
+      font-family: serif;
+      font-size: 18px;
+      padding: 10px;
+      margin: 5px 0 22px 0;
+      margin: 5px -2px;
+      border: none;
+      background: #eee;
+      }
+      /* When the inputs get focus, do something */
+      .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+      background-color: #ddd;
+      outline: none;
+      }
+      /* Style submit/login button */
+      .form-container .btn {
+      background-color: #4169E1;
+      border-radius: 10px;
+      font-family: serif;
+      font-size: 20px;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 8px;
+      margin-bottom:5px;
+      opacity: 0.8;
+      }
+      /* Style cancel button */
+      .form-container .cancel {
+     
+      }
+      /* Hover effects for buttons */
+      .form-container .btn:hover, .open-button:hover {
+      opacity: 1;
+      }
+           
+      .form-container .cancel {
+      margin-top: 10px;
+      margin-left: 330px;
+      cursor: pointer;
+      }
+        /* Hover effects for buttons */
+      .form-container .cancel:hover, .open-button:hover {
+      opacity: 1;
+      }
+     

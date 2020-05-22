@@ -1,0 +1,13 @@
+body{
+    background: linear-gradient(
+      to right, 
+      #fffdc2,
+      #fffdc2 15%,
+      #d7f0a2 15%,
+      #d7f0a2 85%,
+      #fffdc2 85%
+    );
+    padding: 0 !important;
+    background-size: cover;
+    font-family: serif;
+}

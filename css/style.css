@@ -1,0 +1,132 @@
+*{
+	box-sizing: border-box;	
+}
+body{
+	padding: 0px;
+	margin: 0px;
+	background: #f6f6f6;
+	font-family: 'Lora', serif ;
+}
+header{
+	background: #9fd7fb;
+	height: 66px;
+}
+header * {
+	color: white;
+}
+header .logo {
+	float: left;
+	
+	margin-left: 0cm;
+}
+header .logo-text {
+	margin: 9px;
+	font-family: 'Candal', serif;
+}
+header .logo-text span {
+	 color: #05f7ff;
+}
+header ul{
+	float: right;
+	margin: 0px;
+	padding: 0px;
+	list-style: none; 
+}
+header .menu-toggle {
+	display: none;
+}
+
+header ul li {
+	float: left;
+	position: relative;
+}
+header ul li ul {
+	position: absolute;
+	top: 66px;
+	right: 0px;
+	width: 180px;
+	display: none;
+}
+header ul li:hover ul  {
+	display: block;
+}
+header ul li ul li {
+	width: 100%;
+}
+header ul li ul li a {
+	padding: 10px;
+	background: white; 
+	color: #444;
+}
+header ul li ul li a.logout {
+	color: red;
+}
+header ul li ul li a:hover {
+	background: #d5d6d6;	
+}
+
+header ul li a {
+	display: block;
+	padding: 21px;
+	font-size: 1.1em;
+	text-decoration: none;
+}
+header ul li a:hover {
+	background: #006669; 
+	transition: 0.5s;
+}
+header .menu-toggle {
+	display: none;
+}
+
+/**** Medea *******/
+
+
+@media only screen and (max-width: 750px) {
+	header {
+		position: relative;
+	}
+	header ul
+	{
+		width: 100%;
+		background: #0E94AD;
+		max-height: 0px;
+		overflow: hidden;
+	}
+	.showing{
+		max-height: 100em;
+	}
+	header ul li
+	{
+		 width: 100%;
+	}
+	header ul li ul
+	{
+		position: static;
+		display: block;
+		width: 100%;
+	}
+	header ul li ul li a {
+		padding: 10px;
+		background: #0E94AD;
+		color: white;
+		padding-left: 50px;
+	}
+	header ul li ul li a:hover {
+		background: #006669;
+	}
+	header ul li ul li a.logout {
+		color: red;
+	}
+	header .menu-toggle {
+	display: block;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	font-size: 1.9em;
+	}
+	header .logo {
+		 margin-left: .5em;
+	}
+	 
+}
